@@ -1,0 +1,3 @@
+function insertLike(postId, userId){
+	console.log(postId+" "+ userId)
+}

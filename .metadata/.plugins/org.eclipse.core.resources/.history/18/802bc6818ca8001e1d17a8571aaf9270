@@ -1,0 +1,42 @@
+<%@page import="com.project.mytechblog.entities.Post"%>
+<%@page import="java.util.List"%>
+<%@page import="com.project.mytechblog.helper.ConnectionProvider"%>
+<%@page import="com.project.mytechblog.dao.PostDao"%>
+
+  <div class = "row">
+
+<% 
+Thread.sleep(1000);
+PostDao dao = new PostDao (ConnectionProvider.getConnection());
+int cid = Integer.parseInt(request.getParameter("cid"));
+List<Post> posts = null;
+if(cid==0){
+	 posts = dao.getAllPosts();
+}else{
+	posts = dao.getPostByCatId(cid);
+}
+
+if(posts.size()==0)
+{
+	out.println("<h3 class = 'display-2 text-center'>Sorry. No posts in this category...</h3>");
+	return;
+}
+for(Post p: posts){
+	%>
+	
+ <div class = "col-md-6 mt-2">
+ <div class = "card">
+ <img class="card-img-top" src="blog_pics/<%= p.getPostPic() %>" alt="Card image cap">
+ <div class = "card-body">
+ <h5><%= p.getPostTitle() %></h5>
+ <p><%= p.getPostContent() %></p>
+ <code><%= p.getPostCode() %></code>
+ 
+ </div>
+ </div>
+ 
+ </div>
+<% 
+}
+%>
+</div>

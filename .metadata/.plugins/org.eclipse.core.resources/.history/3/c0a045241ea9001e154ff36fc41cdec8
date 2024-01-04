@@ -1,0 +1,46 @@
+package com.project.mytechblog.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class LikeDao {
+	Connection con;
+	
+	
+	public LikeDao(Connection con) {
+		super();
+		this.con = con;
+	}
+
+
+	public boolean insertIlike(int postId, int likeUserId) {
+		boolean f = false;
+		try {
+		String query = "insert into like(postId, likeUserId) values(?, ?)";
+		PreparedStatement ps = this.con.prepareStatement(query);
+		ps.setInt(1, postId);
+		ps.setInt(2, likeUserId);
+		ps.executeUpdate();
+		f = true;
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return f;
+	}
+	
+	public int countLikeOnPost(int postId) {
+		int count = 0;
+		
+		try {
+			String query = "select count(*) from like where postId = ?";
+			PreparedStatement ps = this.con.prepareStatement(query);
+			ps.setInt(1, postId);
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return count;
+		
+	}
+}

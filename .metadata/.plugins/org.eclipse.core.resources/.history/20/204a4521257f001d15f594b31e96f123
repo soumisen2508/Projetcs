@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+<product>
+<code>pt0001</code>
+<name>iphone 4s</name>
+<price>14999</price>
+<img>81-fFXQdPTL._SX679_.jpg</img>
+</product>
+<product>
+<code>pt0002</code>
+<name>iphone 5s</name>
+<price>15999</price>
+<img>81I3w4J6yjL._SX522_.jpg</img>
+</product>
+<product>
+<code>pt0003</code>
+<name>iphone 6s</name>
+<price>16999</price>
+<img>814ePfNubRL._SX679_.jpg</img>
+</product>
+</products>

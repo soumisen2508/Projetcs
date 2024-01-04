@@ -1,0 +1,5 @@
+PRODUCT-TITLE1 1.jpg 49000 Good-Product Type1
+PRODUCT-TITLE2 2.jpg 78000 Good-Product Type2
+PRODUCT-TITLE3 3.jpg 90000 Good-Product Type2
+PRODUCT-TITLE4 4.jpg 56000 Good-Product Type3
+PRODUCT-TITLE5 5.jpg 86000 Good-Product Type3

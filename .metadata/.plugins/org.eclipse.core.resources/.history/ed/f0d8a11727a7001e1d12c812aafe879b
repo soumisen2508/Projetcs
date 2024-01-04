@@ -1,0 +1,5 @@
+package com.project.mytechblog.entities;
+
+public class Category {
+
+}

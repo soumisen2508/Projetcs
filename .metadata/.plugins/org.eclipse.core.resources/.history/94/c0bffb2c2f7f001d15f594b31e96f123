@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		<xsl:for-each select="//product">
+		The Product code is:<xsl:value-of select="code"></xsl:value-of> <br />
+		The Product name is:<xsl:value-of select="name"></xsl:value-of> <br />
+		The Product price is:<xsl:value-of select="price"></xsl:value-of> <br />
+		<hr/>
+		</xsl:for-each>
+	</xsl:template>
+</xsl:stylesheet>

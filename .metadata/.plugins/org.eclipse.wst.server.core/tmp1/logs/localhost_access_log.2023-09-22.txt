@@ -1,0 +1,12 @@
+127.0.0.1 - - [22/Sep/2023:14:48:53 +0800] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:48:54 +0800] "GET /mycart/WEB-INF/classes/mycart/dao/CategoryDao.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:48:54 +0800] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:32 +0800] "GET /mycart/ HTTP/1.1" 200 8910
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:32 +0800] "GET /mycart/js/script.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:32 +0800] "GET /mycart/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:33 +0800] "GET /mycart/img/products/laptop2.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:33 +0800] "GET /mycart/img/products/laptop1.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:33 +0800] "GET /mycart/img/products/laptop3.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:33 +0800] "GET /mycart/img/products/mobile1.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:33 +0800] "GET /mycart/img/products/mobile2.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2023:14:49:33 +0800] "GET /mycart/img/products/kurti.jpg HTTP/1.1" 304 -

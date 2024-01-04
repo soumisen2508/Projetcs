@@ -1,0 +1,13 @@
+package com.project.mytechblog.entities;
+
+import java.sql.Date;
+
+public class Post {
+	private int postId;
+	private String postTitle;
+	private String postContent;
+	private String postCode;
+	private Date postDate;
+	private int catId;
+
+}
